@@ -15,9 +15,10 @@ def print_hi(name):
 if __name__ == '__main__':
 
     game = game.Game(1)
-    game.deal_player()
-    game.hit_player()
-    print_hi(game.player_hand)
-    print_hi(game.player_hand_value)
+    game.deal_dealer()
+    #game.hit_dealer()
+    print_hi(game.dealer_hand)
+    print_hi(game.dealer_hand_value)
+
 
 

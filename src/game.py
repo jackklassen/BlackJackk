@@ -63,12 +63,13 @@ class Game:
         return self.player_hand_value
 
     def hit_dealer(self):
-        pass
+        newcard = self.deck.deal_card()
+        self.dealer_hand_hand.append(newcard)
+        self.dealer_hand_value += self.deck.get_value(newcard)
+        return self.dealer_hand_value
 
 
     def check_bust(self, value):
         if value > 21:
             return True
         return False
-
-
