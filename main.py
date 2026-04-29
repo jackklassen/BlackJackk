@@ -4,7 +4,7 @@
 #I kinda want it to be able to count cards agianst.
 
 from src import deck
-
+from src import game
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -13,9 +13,11 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    deck = deck.Deck(1)
-    deck.build_deck()
-    deck.shuffle()
-    print_hi(deck.deal_card())
+
+    game = game.Game(1)
+    game.deal_player()
+    game.hit_player()
+    print_hi(game.player_hand)
+    print_hi(game.player_hand_value)
 
 

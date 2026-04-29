@@ -35,7 +35,7 @@ class Deck:
         elif card[1] == "A":
             return 11
         else:
-            return card[1]
+            return int(card[1])
 
 
     def deal_card(self):
