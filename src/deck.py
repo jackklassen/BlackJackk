@@ -3,7 +3,7 @@ import random
 
 class Deck:
     suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
-    values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "K", "Q", "J"]
+    values = ["A", "2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J"]
     deck = []
     deck_size = 1
 

@@ -7,13 +7,21 @@ class DeckTest(unittest.TestCase):
    #make decks
 
     def setUp(self):
-        deck1 = Deck(1)
-        deck2 = Deck(2)
-        deck3 = Deck(255)
+        self.deck1 = Deck(1)
+        self.deck2 = Deck(2)
+        self.deck3 = Deck(255)
 
     def test_build_deck(self):
+        assert(len(self.deck1.deck) == 0)
+        assert (len(self.deck2.deck) == 0)
+        assert (len(self.deck3.deck) == 0)
         self.deck1.build_deck()
         self.deck2.build_deck()
+        self.deck3.build_deck()
+        assert (len(self.deck1.deck) == 52)
+        assert (len(self.deck2.deck) == (52 * 2))
+        assert (len(self.deck3.deck) == (52 * 255))
+
 
     def test_shuffle(self):
         #copy decks, call shuffle on them if they are the same it fails.
