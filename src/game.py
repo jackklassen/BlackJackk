@@ -51,7 +51,7 @@ class Game:
     def hit_dealer(self):
         newcard = self.deck.deal_card()
         self.dealer_hand.append(newcard)
-        self.dealer_hand_value = self.deck.count_value(self.dealer_hand_value)
+        self.dealer_hand_value = self.deck.count_value(self.dealer_hand)
         return self.dealer_hand_value
 
 
@@ -69,30 +69,41 @@ class Game:
         # simple loop just keep allowing hit until user hits stand.
         # then call dealer_hit_loop, which reveals card and either stops there or hits until 17 or 21
         print("Welcome to the blackjack table")
-        self.deal_dealer()
-        self.deal_player()
+
         quit = False
         while not quit:
+
             print("What is your bid?")
             bid = input()
             print(f"Your bid is {bid} ")
+            self.clear_all()
+            self.deal_dealer()
+            self.deal_player()
             hand_done = False
             while not hand_done:
+                if self.player_hand_value > BLACK_JACK:
+                    hand_done = True
+                    break
                 print("Dealer has ")
                 print(self.dealer_hand[0])
                 print("You have ")
-                print(self.player_hand[0], self.player_hand[1])
+                print(self.player_hand)
                 print("Enter h for Hit, s for Stand, CTRL-C for QUIT")
                 usr_input = input()
                 if self.handle_input(usr_input) == 0:
                     hand_done = True
 
+
             if self.player_hand_value > BLACK_JACK:
                 print("You lost!")
-                break
-            if self.player_hand_value == BLACK_JACK:
+            elif self.player_hand_value == BLACK_JACK:
                 print("You won!")
-                break
+
+    def clear_all(self):
+        self.player_hand_value = 0
+        self.player_hand = []
+        self.dealer_hand =  []
+        self.dealer_hand_value = 0
 
     def handle_input(self, input):
         cln_input = self.clean_input(input)
@@ -100,18 +111,31 @@ class Game:
         if cln_input == "h":
             self.hit_player()
             return 1
-        if cln_input == "s":
+        elif cln_input == "s":
             self.dealer_hit_loop()
-            return 0
+        return 0
 
     def dealer_hit_loop(self):
         # call reveal dealer, and loop, while 21 or 17 is not value hit dealer.
 
         # when 21 or 17 (or over on dealer side) is not hit just compare value of dealer and player, higher wins.
-        if self.player_hand_value > self.dealer_hand_value:
+        while self.dealer_hand_value <= 17:
+            self.hit_dealer()
+            #print(self.dealer_hand_value)
+            print("Dealer has ")
+            print(self.dealer_hand)
+            print("you have ")
+            print(self.player_hand)
+
+        if self.dealer_hand_value > BLACK_JACK:
+            print("You Won!")
+
+        elif self.player_hand_value > self.dealer_hand_value:
             print("You won!")
         else:
             print("You lost!")
+
+        return 0
 
     def shuffle_ui(self):
         # shuffle game

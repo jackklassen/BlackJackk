@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="Did a little work on tests, fixed the values for deck">
+    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="refactored the game logic, its not there yet but it will be soon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deck.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tui.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000013191133776" />
-      <entry key="S2" value="1.0338899279597922" />
-      <entry key="S5" value="1.2601361909451385" />
-      <entry key="S10" value="1.6228379597861782" />
-      <entry key="S30" value="3.5745626301538715" />
-      <entry key="S60" value="5.519034460190516" />
-      <entry key="M2" value="8.858277743081846" />
-      <entry key="M5" value="22.36308698592841" />
-      <entry key="M10" value="47.10844004504298" />
-      <entry key="M15" value="74.90588593433449" />
-      <entry key="M30" value="144.94873385631712" />
-      <entry key="H1" value="218.2620710877771" />
-      <entry key="H2" value="272.8470287453723" />
-      <entry key="H4" value="306.3875531086767" />
-      <entry key="D1" value="338.1789883087783" />
-      <entry key="W1" value="344.0156564916336" />
+      <entry key="MS100" value="1.0005343230963186" />
+      <entry key="MS500" value="1.2215954268358422" />
+      <entry key="S2" value="1.6949754134346602" />
+      <entry key="S5" value="2.212522640228479" />
+      <entry key="S10" value="3.6599534920809775" />
+      <entry key="S30" value="8.347428050710135" />
+      <entry key="S60" value="11.47780908142085" />
+      <entry key="M2" value="14.776990025598623" />
+      <entry key="M5" value="23.025948949533014" />
+      <entry key="M10" value="35.51204116894379" />
+      <entry key="M15" value="47.58149493905233" />
+      <entry key="M30" value="92.47659270958123" />
+      <entry key="H1" value="177.74053611242311" />
+      <entry key="H2" value="272.59977266548026" />
+      <entry key="H4" value="345.50872806356807" />
+      <entry key="D1" value="425.44050019854836" />
+      <entry key="W1" value="441.29052151515896" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.4384486440846963E-271" />
-      <entry key="S2" value="1.9474826187844296E-68" />
-      <entry key="S5" value="8.23738635706893E-28" />
-      <entry key="S10" value="2.8700847412529666E-14" />
-      <entry key="S30" value="3.0665516043110904E-5" />
-      <entry key="S60" value="0.005753177251079406" />
-      <entry key="M2" value="0.08922619148658267" />
-      <entry key="M5" value="0.5863077209252561" />
-      <entry key="M10" value="1.8574973037525428" />
-      <entry key="M15" value="3.48163833978893" />
-      <entry key="M30" value="7.497935068659695" />
-      <entry key="H1" value="11.48738172061191" />
-      <entry key="H2" value="14.343271944221188" />
-      <entry key="H4" value="16.058326552745825" />
-      <entry key="D1" value="17.659383327864777" />
-      <entry key="W1" value="17.950906428060907" />
+      <entry key="MS100" value="5.781081899273695E-37" />
+      <entry key="MS500" value="5.660696117707444E-8" />
+      <entry key="S2" value="0.018947575694443775" />
+      <entry key="S5" value="0.36499732687104497" />
+      <entry key="S10" value="1.174040243563463" />
+      <entry key="S30" value="2.9301067677139394" />
+      <entry key="S60" value="3.875422839968529" />
+      <entry key="M2" value="4.726620255285811" />
+      <entry key="M5" value="6.224714648813135" />
+      <entry key="M10" value="7.729549207814251" />
+      <entry key="M15" value="8.72652284890997" />
+      <entry key="M30" value="11.456613494502047" />
+      <entry key="H1" value="16.10934153646558" />
+      <entry key="H2" value="21.12569802402368" />
+      <entry key="H4" value="24.92407413199199" />
+      <entry key="D1" value="29.04767237138279" />
+      <entry key="W1" value="29.86108223971885" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.732327594597386E-26" />
-      <entry key="MS500" value="7.71499412367848E-6" />
-      <entry key="S2" value="0.057467970857756935" />
-      <entry key="S5" value="0.4278461797612461" />
-      <entry key="S10" value="1.0128250777822074" />
-      <entry key="S30" value="3.297607369220613" />
-      <entry key="S60" value="5.373168196068264" />
-      <entry key="M2" value="8.862406822926545" />
-      <entry key="M5" value="22.897924444323298" />
-      <entry key="M10" value="48.92104168909982" />
-      <entry key="M15" value="78.3423207256653" />
-      <entry key="M30" value="152.40482275962452" />
-      <entry key="H1" value="229.71859341134964" />
-      <entry key="H2" value="287.17121096853873" />
-      <entry key="H4" value="322.43521720613455" />
-      <entry key="D1" value="355.8364187201308" />
-      <entry key="W1" value="361.9662793297948" />
+      <entry key="MS100" value="0.0014313862259607744" />
+      <entry key="MS500" value="0.33925135870082956" />
+      <entry key="S2" value="1.2511869753885407" />
+      <entry key="S5" value="2.258908702075266" />
+      <entry key="S10" value="4.5352673138616355" />
+      <entry key="S30" value="11.063094217578353" />
+      <entry key="S60" value="15.209602069327486" />
+      <entry key="M2" value="19.41090743625173" />
+      <entry key="M5" value="29.192515927005807" />
+      <entry key="M10" value="43.19803508371879" />
+      <entry key="M15" value="56.2709125132987" />
+      <entry key="M30" value="103.90164831461276" />
+      <entry key="H1" value="193.82240144924845" />
+      <entry key="H2" value="293.7053204241448" />
+      <entry key="H4" value="370.4202773851209" />
+      <entry key="D1" value="454.48563905469564" />
+      <entry key="W1" value="471.1512292109976" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -200,7 +197,7 @@
       <workItem from="1779033970023" duration="24000" />
       <workItem from="1779120824637" duration="1860000" />
       <workItem from="1779136403010" duration="4506000" />
-      <workItem from="1779205278430" duration="1552000" />
+      <workItem from="1779205278430" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -234,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777753047339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactored the game logic, its not there yet but it will be soon">
+      <option name="closed" value="true" />
+      <created>1779208393363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779208393363</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,10 +260,11 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Continued to work on game logic" />
     <MESSAGE value="Did a little work on tests, fixed the values for deck" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did a little work on tests, fixed the values for deck" />
+    <MESSAGE value="refactored the game logic, its not there yet but it will be soon" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored the game logic, its not there yet but it will be soon" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BlackJackk$main.coverage" NAME="main Coverage Results" MODIFIED="1779143769078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BlackJackk$main.coverage" NAME="main Coverage Results" MODIFIED="1779211947984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BlackJackk$tui.coverage" NAME="tui Coverage Results" MODIFIED="1779143644230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
     <SUITE FILE_PATH="coverage/BlackJackk$.coverage" NAME=" Coverage Results" MODIFIED="1779143330478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
