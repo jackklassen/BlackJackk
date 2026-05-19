@@ -1,11 +1,12 @@
 import random
 
-
+BLACK_JACK = 21
 class Deck:
     suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
     values = ["A", "2", "3", "4", "5", "6", "7", "8", "9","10", "K", "Q", "J"]
     deck = []
     deck_size = 1
+
 
 
     def __init__(self,deck_size):
@@ -38,6 +39,23 @@ class Deck:
             return int(card[1])
 
 
+    def count_value(self, hand):
+        value = 0
+        aces = 0
+        for card in hand:
+            if self.get_value(card) == 11:
+                aces += 1
+            else:
+                value += self.get_value(card)
+
+        while aces > 0:
+            if (value + 11) > BLACK_JACK:
+                value += 1
+            else:
+                value += 11
+        return value
+
+
     def deal_card(self):
         if(len(self.deck) > 0):
             return self.deck.pop()
@@ -45,5 +63,3 @@ class Deck:
             self.build_deck()
             self.shuffle()
             return self.deck.pop()
-
-

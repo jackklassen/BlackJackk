@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="Continued to work on game logic">
-      <change beforePath="$PROJECT_DIR$/.idea/BlackJackk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BlackJackk.iml" afterDir="false" />
+    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="Did a little work on tests, fixed the values for deck">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_deck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tui.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,65 @@
     &quot;accountId&quot;: &quot;c82baca4-cf61-4614-861e-898e690c9074&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000013191133776" />
+      <entry key="S2" value="1.0338899279597922" />
+      <entry key="S5" value="1.2601361909451385" />
+      <entry key="S10" value="1.6228379597861782" />
+      <entry key="S30" value="3.5745626301538715" />
+      <entry key="S60" value="5.519034460190516" />
+      <entry key="M2" value="8.858277743081846" />
+      <entry key="M5" value="22.36308698592841" />
+      <entry key="M10" value="47.10844004504298" />
+      <entry key="M15" value="74.90588593433449" />
+      <entry key="M30" value="144.94873385631712" />
+      <entry key="H1" value="218.2620710877771" />
+      <entry key="H2" value="272.8470287453723" />
+      <entry key="H4" value="306.3875531086767" />
+      <entry key="D1" value="338.1789883087783" />
+      <entry key="W1" value="344.0156564916336" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.4384486440846963E-271" />
+      <entry key="S2" value="1.9474826187844296E-68" />
+      <entry key="S5" value="8.23738635706893E-28" />
+      <entry key="S10" value="2.8700847412529666E-14" />
+      <entry key="S30" value="3.0665516043110904E-5" />
+      <entry key="S60" value="0.005753177251079406" />
+      <entry key="M2" value="0.08922619148658267" />
+      <entry key="M5" value="0.5863077209252561" />
+      <entry key="M10" value="1.8574973037525428" />
+      <entry key="M15" value="3.48163833978893" />
+      <entry key="M30" value="7.497935068659695" />
+      <entry key="H1" value="11.48738172061191" />
+      <entry key="H2" value="14.343271944221188" />
+      <entry key="H4" value="16.058326552745825" />
+      <entry key="D1" value="17.659383327864777" />
+      <entry key="W1" value="17.950906428060907" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.732327594597386E-26" />
+      <entry key="MS500" value="7.71499412367848E-6" />
+      <entry key="S2" value="0.057467970857756935" />
+      <entry key="S5" value="0.4278461797612461" />
+      <entry key="S10" value="1.0128250777822074" />
+      <entry key="S30" value="3.297607369220613" />
+      <entry key="S60" value="5.373168196068264" />
+      <entry key="M2" value="8.862406822926545" />
+      <entry key="M5" value="22.897924444323298" />
+      <entry key="M10" value="48.92104168909982" />
+      <entry key="M15" value="78.3423207256653" />
+      <entry key="M30" value="152.40482275962452" />
+      <entry key="H1" value="229.71859341134964" />
+      <entry key="H2" value="287.17121096853873" />
+      <entry key="H4" value="322.43521720613455" />
+      <entry key="D1" value="355.8364187201308" />
+      <entry key="W1" value="361.9662793297948" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -45,33 +105,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for tests.test_deck.DeckTest.executor": "Run",
-    "Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck.executor": "Run",
-    "Python.deck.executor": "Run",
-    "Python.game.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.tui.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for tests.test_deck.DeckTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.deck.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tui.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck">
+}</component>
+  <component name="RunManager">
     <configuration name="Python tests for tests.test_deck.DeckTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="BlackJackk" />
       <option name="ENV_FILES" value="" />
@@ -118,7 +179,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-024ed6589d45-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.23567.174" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PY-261.24374.152" />
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +194,13 @@
       <workItem from="1777664007541" duration="320000" />
       <workItem from="1777673616715" duration="195000" />
       <workItem from="1777750564480" duration="635000" />
-      <workItem from="1777752162532" duration="790000" />
+      <workItem from="1777752162532" duration="857000" />
+      <workItem from="1777951603533" duration="144000" />
+      <workItem from="1779032295474" duration="883000" />
+      <workItem from="1779033970023" duration="24000" />
+      <workItem from="1779120824637" duration="1860000" />
+      <workItem from="1779136403010" duration="4506000" />
+      <workItem from="1779205278430" duration="1552000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -158,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777480824668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Did a little work on tests, fixed the values for deck">
+      <option name="closed" value="true" />
+      <created>1777753047339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777753047339</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,9 +254,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Continued to work on game logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continued to work on game logic" />
+    <MESSAGE value="Did a little work on tests, fixed the values for deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="Did a little work on tests, fixed the values for deck" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BlackJackk$.coverage" NAME=" Coverage Results" MODIFIED="1777752956267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BlackJackk$main.coverage" NAME="main Coverage Results" MODIFIED="1779143769078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BlackJackk$tui.coverage" NAME="tui Coverage Results" MODIFIED="1779143644230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
+    <SUITE FILE_PATH="coverage/BlackJackk$.coverage" NAME=" Coverage Results" MODIFIED="1779143330478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
