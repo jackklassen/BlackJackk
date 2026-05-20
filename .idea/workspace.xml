@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="refactored the game logic, its not there yet but it will be soon">
+    <list default="true" id="24245873-44af-4ad4-9d33-c09fd7299307" name="Changes" comment="basic working version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_deck.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_deck.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0005343230963186" />
-      <entry key="MS500" value="1.2215954268358422" />
-      <entry key="S2" value="1.6949754134346602" />
-      <entry key="S5" value="2.212522640228479" />
-      <entry key="S10" value="3.6599534920809775" />
-      <entry key="S30" value="8.347428050710135" />
-      <entry key="S60" value="11.47780908142085" />
-      <entry key="M2" value="14.776990025598623" />
-      <entry key="M5" value="23.025948949533014" />
-      <entry key="M10" value="35.51204116894379" />
-      <entry key="M15" value="47.58149493905233" />
-      <entry key="M30" value="92.47659270958123" />
-      <entry key="H1" value="177.74053611242311" />
-      <entry key="H2" value="272.59977266548026" />
-      <entry key="H4" value="345.50872806356807" />
-      <entry key="D1" value="425.44050019854836" />
-      <entry key="W1" value="441.29052151515896" />
+      <entry key="MS100" value="1.000000007980027" />
+      <entry key="MS500" value="1.0356253083198745" />
+      <entry key="S2" value="1.881774808413292" />
+      <entry key="S5" value="2.811537446801837" />
+      <entry key="S10" value="3.325072703307173" />
+      <entry key="S30" value="3.9067999778401674" />
+      <entry key="S60" value="6.434724773952763" />
+      <entry key="M2" value="16.582530389264228" />
+      <entry key="M5" value="45.379854891404875" />
+      <entry key="M10" value="75.24727196699847" />
+      <entry key="M15" value="95.7995898848342" />
+      <entry key="M30" value="148.3530115579249" />
+      <entry key="H1" value="238.68930362836937" />
+      <entry key="H2" value="342.9406674013053" />
+      <entry key="H4" value="426.0935371903368" />
+      <entry key="D1" value="519.8725090011753" />
+      <entry key="W1" value="538.7617962802553" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="5.781081899273695E-37" />
-      <entry key="MS500" value="5.660696117707444E-8" />
-      <entry key="S2" value="0.018947575694443775" />
-      <entry key="S5" value="0.36499732687104497" />
-      <entry key="S10" value="1.174040243563463" />
-      <entry key="S30" value="2.9301067677139394" />
-      <entry key="S60" value="3.875422839968529" />
-      <entry key="M2" value="4.726620255285811" />
-      <entry key="M5" value="6.224714648813135" />
-      <entry key="M10" value="7.729549207814251" />
-      <entry key="M15" value="8.72652284890997" />
-      <entry key="M30" value="11.456613494502047" />
-      <entry key="H1" value="16.10934153646558" />
-      <entry key="H2" value="21.12569802402368" />
-      <entry key="H4" value="24.92407413199199" />
-      <entry key="D1" value="29.04767237138279" />
-      <entry key="W1" value="29.86108223971885" />
+      <entry key="MS100" value="3.181353029910648E-5" />
+      <entry key="MS500" value="0.12604405686182438" />
+      <entry key="S2" value="0.595841287287023" />
+      <entry key="S5" value="0.8129282899637165" />
+      <entry key="S10" value="0.9016257692274956" />
+      <entry key="S30" value="0.9819354404890132" />
+      <entry key="S60" value="1.248998698298345" />
+      <entry key="M2" value="2.2835200562758518" />
+      <entry key="M5" value="5.507308880978999" />
+      <entry key="M10" value="9.343170271936508" />
+      <entry key="M15" value="11.856049300875052" />
+      <entry key="M30" value="16.664675928378536" />
+      <entry key="H1" value="22.739534557543962" />
+      <entry key="H2" value="28.928908798177755" />
+      <entry key="H4" value="33.63110174126431" />
+      <entry key="D1" value="38.796710572239" />
+      <entry key="W1" value="39.824226209669455" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0014313862259607744" />
-      <entry key="MS500" value="0.33925135870082956" />
-      <entry key="S2" value="1.2511869753885407" />
-      <entry key="S5" value="2.258908702075266" />
-      <entry key="S10" value="4.5352673138616355" />
-      <entry key="S30" value="11.063094217578353" />
-      <entry key="S60" value="15.209602069327486" />
-      <entry key="M2" value="19.41090743625173" />
-      <entry key="M5" value="29.192515927005807" />
-      <entry key="M10" value="43.19803508371879" />
-      <entry key="M15" value="56.2709125132987" />
-      <entry key="M30" value="103.90164831461276" />
-      <entry key="H1" value="193.82240144924845" />
-      <entry key="H2" value="293.7053204241448" />
-      <entry key="H4" value="370.4202773851209" />
-      <entry key="D1" value="454.48563905469564" />
-      <entry key="W1" value="471.1512292109976" />
+      <entry key="MS100" value="3.966308972953758E-4" />
+      <entry key="MS500" value="0.2578021851466623" />
+      <entry key="S2" value="1.8204674862113277" />
+      <entry key="S5" value="3.230602229868866" />
+      <entry key="S10" value="3.995593219652669" />
+      <entry key="S30" value="4.800167515358709" />
+      <entry key="S60" value="7.619116324325592" />
+      <entry key="M2" value="18.792343313549047" />
+      <entry key="M5" value="50.80911422462312" />
+      <entry key="M10" value="84.5239641830418" />
+      <entry key="M15" value="107.59824175627033" />
+      <entry key="M30" value="164.97312305626662" />
+      <entry key="H1" value="261.3937925200959" />
+      <entry key="H2" value="371.84488193433737" />
+      <entry key="H4" value="459.7094618925377" />
+      <entry key="D1" value="558.6661612422674" />
+      <entry key="W1" value="578.5855704115318" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -107,6 +107,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests for tests.test_deck.DeckTest.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_deck.DeckTest.test_shuffle.executor&quot;: &quot;Run&quot;,
     &quot;Python.deck.executor&quot;: &quot;Run&quot;,
     &quot;Python.game.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
@@ -129,7 +130,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_deck.DeckTest">
     <configuration name="Python tests for tests.test_deck.DeckTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="BlackJackk" />
       <option name="ENV_FILES" value="" />
@@ -166,10 +167,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.test_deck.DeckTest.test_shuffle" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="BlackJackk" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_deck.DeckTest.test_shuffle&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck" />
         <item itemvalue="Python tests.Python tests for tests.test_deck.DeckTest" />
+        <item itemvalue="Python tests.Python tests for tests.test_deck.DeckTest.test_build_deck" />
+        <item itemvalue="Python tests.Python tests for tests.test_deck.DeckTest.test_shuffle" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +217,8 @@
       <workItem from="1779033970023" duration="24000" />
       <workItem from="1779120824637" duration="1860000" />
       <workItem from="1779136403010" duration="4506000" />
-      <workItem from="1779205278430" duration="4988000" />
+      <workItem from="1779205278430" duration="5546000" />
+      <workItem from="1779297857383" duration="1535000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -239,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779208393363</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="basic working version">
+      <option name="closed" value="true" />
+      <created>1779212201145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1779212201145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,11 +290,12 @@
     <MESSAGE value="Continued to work on game logic" />
     <MESSAGE value="Did a little work on tests, fixed the values for deck" />
     <MESSAGE value="refactored the game logic, its not there yet but it will be soon" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored the game logic, its not there yet but it will be soon" />
+    <MESSAGE value="basic working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic working version" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BlackJackk$main.coverage" NAME="main Coverage Results" MODIFIED="1779211947984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BlackJackk$main.coverage" NAME="main Coverage Results" MODIFIED="1779300743908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BlackJackk$tui.coverage" NAME="tui Coverage Results" MODIFIED="1779143644230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ui" />
-    <SUITE FILE_PATH="coverage/BlackJackk$.coverage" NAME=" Coverage Results" MODIFIED="1779143330478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BlackJackk$.coverage" NAME=" Coverage Results" MODIFIED="1779301619523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

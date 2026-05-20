@@ -26,12 +26,26 @@ class DeckTest(unittest.TestCase):
     def test_shuffle(self):
         #copy decks, call shuffle on them if they are the same it fails.
         #but also they should all be the same size.
-        pass
+        self.deck1.build_deck()
+        deck_copy = list(self.deck1.deck)
+        assert(deck_copy == self.deck1.deck)
+        self.deck1.shuffle()
+        assert(deck_copy != self.deck1.deck)
+
 
 
     def test_get_value(self):
-        pass
+        test_card_A = ["Hearts", "A"]
+        test_card_2 = ["Hearts", "2"]
+        test_card_K = ["Hearts", "K"]
+        test_card_10 = ["Hearts", "10"]
+        assert(self.deck1.get_value(test_card_A) == 11)
+        assert(self.deck1.get_value(test_card_2) == 2)
+        assert(self.deck1.get_value(test_card_K) == 10)
+        assert(self.deck1.get_value(test_card_10) == 10)
 
     def test_deal_card(self):
-        #deal card, check its value, then see if deck went down in size.
-        pass
+        self.deck1.build_deck()
+        pre_size = len(self.deck1.deck)
+        self.deck1.deal_card()
+        assert((pre_size - 1) == len(self.deck1.deck))
